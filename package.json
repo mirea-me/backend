@@ -1,0 +1,27 @@
+{
+  "name": "backend-unicord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicord/backend.git"
+  },
+  "author": "feed4rz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unicord/backend/issues"
+  },
+  "homepage": "https://github.com/unicord/backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cluster": "^0.7.7",
+    "colors": "^1.2.1",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "mongoose": "^5.0.13"
+  }
+}

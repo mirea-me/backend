@@ -1,0 +1,8 @@
+ {
+	"db": "api",
+	"express": {
+		"https": false,
+		"host": "http://localhost",
+		"port": 3000
+	}
+}
