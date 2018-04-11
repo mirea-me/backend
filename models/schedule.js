@@ -11,7 +11,6 @@ const Schedule = new Schema({
   	from: Date,
   	to: Date
   },
-  holidays: [{ type: Date }],
   days: [{
   	week: Number,
   	classes: [{
