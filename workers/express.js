@@ -8,7 +8,7 @@ const logger = require('../classes/logger.js')
 const a = new logger('express')
 
 /* Mongoose connect */
-mongoose.connect(`mongodb://localhost/${global.config.db}`, { useMongoClient: true })
+mongoose.connect(`mongodb://localhost/${global.config.db}`)
 
 const db = mongoose.connection
 

@@ -4,12 +4,11 @@ const package = require('../package.json')
 const router = express.Router()
 
 /* Middleware */
-const auth = require('../middlewares/auth.js')
-
 router.use(require('../middlewares/ratelimit.js'))
 
 /* Subroutes */
-//router.use('/user', require('./user.js'))
+router.use('/group', require('./group.js'))
+router.use('/org', require('./org.js'))
 
 const up_since = Math.floor(Date.now() / 1000)
 const version = package.version

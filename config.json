@@ -4,5 +4,6 @@
 		"https": false,
 		"host": "http://localhost",
 		"port": 3000
-	}
+	},
+	"secret": ""
 }

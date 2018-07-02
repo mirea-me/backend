@@ -1,5 +1,6 @@
 /* Dependencies */
 const mongoose = require('mongoose')
+const deepPop = require('mongoose-deep-populate')(mongoose)
 const { Schema } = mongoose
 
 /* Schema */
@@ -11,5 +12,7 @@ const Staff = new Schema({
   role: Number,
   orgs: [{ type: Schema.Types.ObjectId, ref: 'Org' }]
 })
+
+Staff.plugin(deepPop, {})
 
 module.exports = mongoose.model('Staff', Staff)
